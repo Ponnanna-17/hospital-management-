@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hospital Management System</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  </head>
+  <body>
+    <h1>Welcome to the Hospital Management System</h1>
+    <a href="/patients/add">Add New Patient</a>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add New Patient</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+  </head>
+  <body>
+    <h1>Add New Patient</h1>
+    <form action="/patients/add" method="POST">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" /><br />
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" /><br />
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" /><br />
+      <label for="gender">Gender:</label>
+      <input type="text" id="gender" name="gender" /><br />
+      <label for="contactNumber">Contact Number:</label>
+      <input type="text" id="contactNumber" name="contactNumber" /><br />
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address" /><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

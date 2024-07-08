@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add New Doctor</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+  </head>
+  <body>
+    <h1>Add New Doctor</h1>
+    <form action="/doctors/add" method="POST">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" /><br />
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" /><br />
+      <label for="specialization">Specialization:</label>
+      <input type="text" id="specialization" name="specialization" /><br />
+      <label for="contactNumber">Contact Number:</label>
+      <input type="text" id="contactNumber" name="contactNumber" /><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

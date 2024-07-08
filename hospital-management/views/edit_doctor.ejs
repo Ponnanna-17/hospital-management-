@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Edit Doctor</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+  </head>
+  <body>
+    <h1>Edit Doctor</h1>
+    <form action="/doctors/edit/<%= doctor.DoctorID %>" method="POST">
+      <label for="firstName">First Name:</label>
+      <input
+        type="text"
+        id="firstName"
+        name="firstName"
+        value="<%= doctor.FirstName %>"
+      /><br />
+      <label for="lastName">Last Name:</label>
+      <input
+        type="text"
+        id="lastName"
+        name="lastName"
+        value="<%= doctor.LastName %>"
+      /><br />
+      <label for="specialization">Specialization:</label>
+      <input
+        type="text"
+        id="specialization"
+        name="specialization"
+        value="<%= doctor.Specialization %>"
+      /><br />
+      <label for="contactNumber">Contact Number:</label>
+      <input
+        type="text"
+        id="contactNumber"
+        name="contactNumber"
+        value="<%= doctor.ContactNumber %>"
+      /><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
